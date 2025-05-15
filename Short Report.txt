@@ -1,0 +1,15 @@
+Short Report (Shell IT Internship Focused)
+During my internship at Shell, I analyzed technical operations involving server uptime, Linux administration, and ticket management. Using both synthetic and real-world-inspired datasets, I applied linear regression to predict operational metrics (e.g., support cost and efficiency scores).
+
+I normalized the features to ensure balanced influence across variables like uptime hours, resolved incidents, and administrative efforts. Gradient descent was implemented to fine-tune weights (w, b), and its performance was compared with scikit-learn’s built-in regression.
+
+Key findings:
+
+Normalization improved convergence speed.
+
+The final MSE and MAE for the real-world dataset were significantly higher than for synthetic data, reflecting the noise and complexity of Shell’s IT systems.
+A smaller learning rate gave smoother convergence, while larger ones risked divergence.
+
+scikit-learn’s model reached better performance in fewer iterations, but gradient descent offered more transparency and control.
+
+Improvement Suggestion: Implement adaptive learning rates (e.g., Adam or RMSProp) to stabilize training and converge faster, especially on multi-feature datasets like asset logs and configuration records in Shell systems.

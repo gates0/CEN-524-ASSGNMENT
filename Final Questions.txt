@@ -1,0 +1,8 @@
+Final Questions
+1. How does the choice of cost function (MSE vs. MAE) affect optimization?
+MSE emphasizes large errors, making the model more sensitive to outliers. This is ideal in systems where extreme mistakes (like server failure or data breaches) are costly. MAE provides robustness and stability in noisy environments, like ticketing logs or network packet metrics. The choice depends on whether penalizing large deviations is a priority.
+2. What challenges arise when scaling to multiple features?
+With multiple features—e.g., integrating Linux logs, SAP asset info, and collaboration metrics—gradient computation becomes complex, and overfitting risks increase. Feature correlation can also introduce multicollinearity. Efficient normalization and dimensionality reduction (e.g., PCA) help address this.
+
+3. How does gradient descent compare to scikit-learn's built-in linear regression?
+Gradient descent is iterative and offers flexibility in learning dynamics. However, it requires hyperparameter tuning and is sensitive to feature scaling. Scikit-learn’s linear regression uses a closed-form solution (Normal Equation), which is faster and more accurate for smaller datasets. In Shell's environment, gradient descent allows integration with real-time systems, while scikit-learn is ideal for batch predictions.
